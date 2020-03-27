@@ -1,1 +1,9 @@
-﻿
+﻿---- JUST IN CASE ------
+CREATE TRIGGER trigger_INFOSYS_GETDATE BEFORE INSERT ON INFO_SYS FOR EACH ROW
+  SET NEW.DATE_PUBLISHED = IFNULL(NEW.DATE_PUBLISHED, CURRENT_DATE)
+
+REFERENCES:
+https://zinoui.com/blog/storing-passwords-securely
+
+----DB----
+

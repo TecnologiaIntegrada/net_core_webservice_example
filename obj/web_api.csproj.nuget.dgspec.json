@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexandreiosimura/Projects/web_api/web_api.csproj": {}
+    "/Users/alexandreiosimura/Projects/net_core_webservice_example/web_api.csproj": {}
   },
   "projects": {
-    "/Users/alexandreiosimura/Projects/web_api/web_api.csproj": {
+    "/Users/alexandreiosimura/Projects/net_core_webservice_example/web_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexandreiosimura/Projects/web_api/web_api.csproj",
+        "projectUniqueName": "/Users/alexandreiosimura/Projects/net_core_webservice_example/web_api.csproj",
         "projectName": "web_api",
-        "projectPath": "/Users/alexandreiosimura/Projects/web_api/web_api.csproj",
+        "projectPath": "/Users/alexandreiosimura/Projects/net_core_webservice_example/web_api.csproj",
         "packagesPath": "/Users/alexandreiosimura/.nuget/packages/",
-        "outputPath": "/Users/alexandreiosimura/Projects/web_api/obj/",
+        "outputPath": "/Users/alexandreiosimura/Projects/net_core_webservice_example/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -20,13 +20,13 @@
           "/Users/alexandreiosimura/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -37,7 +37,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
             "MySqlConnector": {
               "target": "Package",

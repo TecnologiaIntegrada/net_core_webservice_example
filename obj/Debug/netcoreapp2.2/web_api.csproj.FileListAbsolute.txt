@@ -1,0 +1,3 @@
+/Users/alexandreiosimura/Projects/net_core_webservice_example/obj/Debug/netcoreapp2.2/web_api.csprojAssemblyReference.cache
+/Users/alexandreiosimura/Projects/net_core_webservice_example/obj/Debug/netcoreapp2.2/web_api.AssemblyInfoInputs.cache
+/Users/alexandreiosimura/Projects/net_core_webservice_example/obj/Debug/netcoreapp2.2/web_api.AssemblyInfo.cs

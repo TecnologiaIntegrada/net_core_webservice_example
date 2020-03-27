@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{F1F28E84-CD1B-4DAD-9223-C55555279D9B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Instructions_WS.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BlogController.cs">
     <Files>
-      <File FileName="Instructions_WS.txt" Line="1" Column="1" />
+      <File FileName="Controllers/LoginController.cs" Line="57" Column="34" />
+      <File FileName="Login/LoginQuery.cs" Line="23" Column="14" />
+      <File FileName="Login/Login.cs" Line="15" Column="23" />
+      <File FileName="Blog/README_INSTRUC_WS.txt" Line="60" Column="3" />
+      <File FileName="Login/GENERAL_DB_SCRIPT.txt" Line="10" Column="1" />
+      <File FileName="Controllers/BlogController.cs" Line="4" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,9 +17,13 @@
                 <Node name="FrameworkReferences" expanded="True" />
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="Instructions_WS.txt" selected="True" />
+              <Node name="Blog" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="BlogController.cs" selected="True" />
+              </Node>
+              <Node name="GeneralClass" expanded="True" />
+              <Node name="Login" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -24,7 +33,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/alexandreiosimura/Projects/net_core_webservice_example/Controllers/BlogController.cs" relfile="Controllers/BlogController.cs" line="42" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.web__api PreferredExecutionTarget="/Applications/Google Chrome.app" />
