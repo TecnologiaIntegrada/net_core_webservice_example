@@ -1,4 +1,6 @@
-﻿//////////////////////
+﻿REF: https://mysqlconnector.net/tutorials/net-core-mvc/
+
+//////////////////////
 //    DATA_BASE     //
 //////////////////////
 CREATE SCHEMA blog;
