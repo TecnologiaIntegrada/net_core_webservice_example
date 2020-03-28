@@ -1,0 +1,4 @@
+C:\Users\User\Documents\ReciclaMais\webservice\net_core_webservice_example\obj\Debug\netcoreapp2.1\web_api.csprojAssemblyReference.cache
+C:\Users\User\Documents\ReciclaMais\webservice\net_core_webservice_example\obj\Debug\netcoreapp2.1\web_api.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\ReciclaMais\webservice\net_core_webservice_example\obj\Debug\netcoreapp2.1\web_api.AssemblyInfoInputs.cache
+C:\Users\User\Documents\ReciclaMais\webservice\net_core_webservice_example\obj\Debug\netcoreapp2.1\web_api.AssemblyInfo.cs

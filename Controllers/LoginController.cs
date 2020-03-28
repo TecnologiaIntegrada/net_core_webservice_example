@@ -24,7 +24,7 @@ namespace web_api.Controllers
             return new OkObjectResult(result);
         }
 
-        // GET /api/login/number
+        // GET /api/plogin/number
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOne(int id)
         {
@@ -36,7 +36,7 @@ namespace web_api.Controllers
             return new OkObjectResult(result);
         }
 
-        // POST api/login/json
+        // POST api/plogin/json
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Login getLogin)
         {

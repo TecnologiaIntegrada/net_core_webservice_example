@@ -15,7 +15,7 @@ namespace web_api
             Db = db;
         }
 
-        public async Task<Login> Auth_User(string user, string passwd)
+        public async Task<LoginQuery> Auth_User(string user, string passwd)
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"SELECT `Id`, `Title`, `Content` FROM `BlogPost` WHERE `Id` = @id";
@@ -29,7 +29,7 @@ namespace web_api
             return result.Count > 0 ? result[0] : null;
         }
 
-        public async Task<Login> GetInstructions()
+        public async Task<LoginQuery> GetInstructions()
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"select * from INFO_SYS order by INFO_SYS.ORDER_PROCESS ASC , INFO_SYS.ORDER_CATEGORY ASC, INFO_SYS.DATE_PUBLISHED DESC";
@@ -43,14 +43,14 @@ namespace web_api
             return result.Count > 0 ? result[0] : null;
         }
 
-        private async Task<List<Login>> ReadAllAsync(DbDataReader reader)
+        private async Task<List<LoginQuery>> ReadAllAsync(DbDataReader reader)
         {
-            var posts = new List<Login>();
+            var posts = new List<LoginQuery>();
             using (reader)
             {
                 while (await reader.ReadAsync())
                 {
-                    var post = new Login(Db)
+                    var post = new LoginQuery(Db)
                     {
                         //Id = reader.GetInt32(0),
                         //Title = reader.GetString(1),
