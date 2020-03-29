@@ -8,6 +8,7 @@ namespace web_api
     {
         public string mylogin { get; set; }
         public string mypassword { get; set; }
+        public string permit { get; set; }
 
 
         internal AppDb Db { get; set; }

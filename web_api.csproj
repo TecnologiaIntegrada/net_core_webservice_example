@@ -11,7 +11,7 @@
     <Compile Remove="Controllers\WeatherForecastController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GeneralClass\" />
+    <Folder Include="GeneralClassesDB\" />
     <Folder Include="Blog\" />
     <Folder Include="Login\" />
   </ItemGroup>

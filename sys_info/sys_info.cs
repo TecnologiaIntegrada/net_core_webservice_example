@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace web_api
 {
-    public class sys_info
+    public class sys_info_class
     {
         public string sys_info_Title { get; set; }
         public string sys_info_Process { get; set; }
@@ -16,12 +16,12 @@ namespace web_api
 
         internal AppDb Db { get; set; }
 
-        public sys_info()
+        public sys_info_class()
         {
 
         }
 
-        internal sys_info(AppDb db)
+        internal sys_info_class(AppDb db)
         {
             Db = db;
         }

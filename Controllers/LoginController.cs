@@ -36,7 +36,7 @@ namespace web_api.Controllers
             return new OkObjectResult(result);
         }
 
-        // POST api/plogin/json
+        // POST api/plogin/json {login = '', password =''} Will Return: Permit:00000
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Login getLogin)
         {

@@ -15,21 +15,21 @@ namespace web_api
             Db = db;
         }
 
-        public async Task<List<sys_info>> LatestPostsAsync()
+        public async Task<List<sys_info_class>> LatestPostsAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"select INFO_SYS.Title, INFO_SYS.Process, INFO_SYS.Category, INFO_SYS.Author, INFO_SYS.Date_Published, INFO_SYS.Description from INFO_SYS order by INFO_SYS.ORDER_PROCESS ASC , INFO_SYS.ORDER_CATEGORY ASC, INFO_SYS.DATE_PUBLISHED DESC";
             return await ReadAllAsync(await cmd.ExecuteReaderAsync());
         }
 
-        private async Task<List<sys_info>> ReadAllAsync(DbDataReader reader)
+        private async Task<List<sys_info_class>> ReadAllAsync(DbDataReader reader)
         {
-            var posts = new List<sys_info>();
+            var posts = new List<sys_info_class>();
             using (reader)
             {
                 while (await reader.ReadAsync())
                 {
-                    var post = new sys_info(Db)
+                    var post = new sys_info_class(Db)
                     {
                         sys_info_Title = reader.GetString(0),
                         sys_info_Process = reader.GetString(1),

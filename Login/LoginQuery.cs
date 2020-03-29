@@ -15,18 +15,24 @@ namespace web_api
             Db = db;
         }
 
-        public async Task<LoginQuery> Auth_User(string user, string passwd)
+        public async Task<string> Auth_User(string mylogin, string mypassword)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT `Id`, `Title`, `Content` FROM `BlogPost` WHERE `Id` = @id";
+            cmd.CommandText = @"SELECT `PERMIT` FROM `USERS` WHERE `LOGIN` = @mylogin AND `PASSWORD` = @mypassword";
             cmd.Parameters.Add(new MySqlParameter
             {
-                //ParameterName = "@id",
-                //DbType = DbType.Int32,
-                //Value = id,
+                ParameterName = "@mylogin",
+                DbType = DbType.String,
+                Value = mylogin,
             });
-            var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
-            return result.Count > 0 ? result[0] : null;
+            cmd.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@mypassword",
+                DbType = DbType.String,
+                Value = mypassword,
+            });
+            var result = returnDS_Login(await cmd.ExecuteReaderAsync());
+            return result.Length > 0 ? result.ToString() : null;
         }
 
         public async Task<LoginQuery> GetInstructions()
@@ -52,6 +58,7 @@ namespace web_api
                 {
                     var post = new LoginQuery(Db)
                     {
+                        
                         //Id = reader.GetInt32(0),
                         //Title = reader.GetString(1),
                         //Content = reader.GetString(2),
@@ -60,6 +67,20 @@ namespace web_api
                 }
             }
             return posts;
+        }
+
+
+        private string returnDS_Login(DbDataReader reader)
+        {
+            using (reader)
+            {
+                reader.ReadAsync();
+                {
+                    string _set_permit = reader.GetString(0);
+                    return _set_permit;
+                }
+            }
+
         }
     }
 }

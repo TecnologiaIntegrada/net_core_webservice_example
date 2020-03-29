@@ -7,7 +7,7 @@ namespace web_api
     {
         public MySqlConnection Connection { get; }
 
-        public AppDb(string connectionString = "server=192.168.2.47;user id=root;password=admadles;port=3306;database=blog;")
+        public AppDb(string connectionString)
         {
             Connection = new MySqlConnection(connectionString);
         }
