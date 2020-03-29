@@ -1,4 +1,4 @@
-# net_core_webservice_example
+# .net core webservice example
 Dot Net Core 3 Web Service Example
 
 
